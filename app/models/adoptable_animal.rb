@@ -1,0 +1,2 @@
+class AdoptableAnimal < ApplicationRecord
+end
