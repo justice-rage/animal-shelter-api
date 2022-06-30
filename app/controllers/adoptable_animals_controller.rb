@@ -38,3 +38,4 @@ class AdoptableAnimalsController < ApplicationController
       params.permit(:species, :breed, :name, :age, :sex)
     end
   end
+end
