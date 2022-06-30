@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_30_174149) do
+ActiveRecord::Schema.define(version: 2022_06_30_193138) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2022_06_30_174149) do
   create_table "adoptable_animals", force: :cascade do |t|
     t.string "species"
     t.string "breed"
+    t.string "name"
   end
 
 end
