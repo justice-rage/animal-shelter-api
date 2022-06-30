@@ -12,10 +12,10 @@ class Seed
         animal_age = ['baby', 'adolescent', 'adult', 'senior'].sample
         adoptable_animal = AdoptableAnimal.create!(
             species: type,
-            breed: species_breed,
-            name: Faker::Name.first_name,
+            breed: (species_breed).downcase,
+            name: (Faker::Name.first_name).downcase,
             age: animal_age,
-            sex: Faker::Gender.binary_type
+            sex: (Faker::Gender.binary_type).downcase
         )
         puts "Adoptable Animal: #{i},
         Species: #{adoptable_animal.species}, 
