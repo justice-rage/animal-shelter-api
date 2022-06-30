@@ -11,7 +11,7 @@ class AdoptableAnimalsController < ApplicationController
     end
 
     def create
-      @adoptable_animal = AdoptableAnimal.create(adoptable_animal_params)
+      @adoptable_animal = AdoptableAnimal.create!(adoptable_animal_params)
       json_response(@adoptable_animal)
     end
 
