@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  namespace :v1 do
+  concern :base_api do
     resources :adoptable_animals
+  end
+
+  namespace :v1 do
+    concerns :base_api
   end
 end
