@@ -6,6 +6,8 @@ describe "get all adoptable animals route", :type => :request do
   before { get '/adoptable_animals'}
 
   it 'returns all adoptable animals' do
+    # Passing: rake db:reset fixed failing test
+    #             - unsure how
     expect(JSON.parse(response.body).size).to eq(20)
   end
 
