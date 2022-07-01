@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "post a adoptable animal route", :type => :request do
 
   before do
-    post '/adoptable_animals', params: { :species => 'cat', :breed => 'tabby', :name => 'leo', :age => '1', :sex => 'male' }
+    post '/v1/adoptable_animals', params: { :species => 'cat', :breed => 'tabby', :name => 'leo', :age => '1', :sex => 'male' }
   end
 
   it 'returns the adoptable animal name' do
