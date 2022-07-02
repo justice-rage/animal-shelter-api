@@ -7,6 +7,7 @@ ruby '2.6.5'
 gem 'rails', '~> 5.2.8'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
+# Use Faker to generate pseudo database data
 gem 'faker'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
