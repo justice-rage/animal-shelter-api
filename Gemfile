@@ -9,6 +9,8 @@ gem 'rails', '~> 5.2.8'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Faker to generate pseudo database data
 gem 'faker'
+# Use will_paginate for pagination
+gem 'will_paginate', '~> 3.3.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
