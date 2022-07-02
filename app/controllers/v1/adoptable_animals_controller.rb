@@ -1,8 +1,11 @@
 class V1::AdoptableAnimalsController < ApplicationController
 
   def index
-    # @adoptable_animals = AdoptableAnimal.all
-    @adoptable_animals = AdoptableAnimal.paginate(:page => params[:page], per_page:25)
+    if params[:page].present?
+      @adoptable_animals = AdoptableAnimal.paginate(:page => params[:page], per_page:25)
+    else
+      @adoptable_animals = AdoptableAnimal.all
+    end
     json_response(@adoptable_animals)
   end
 
