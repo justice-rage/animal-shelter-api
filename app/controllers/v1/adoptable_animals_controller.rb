@@ -5,6 +5,21 @@ class V1::AdoptableAnimalsController < ApplicationController
       @adoptable_animals = AdoptableAnimal.paginate(:page => params[:page], per_page:25)
     elsif params[:random].present?
       @adoptable_animals = AdoptableAnimal.all.sample
+    elsif params[:species].present?
+      species = params[:species]
+      @adoptable_animals = AdoptableAnimal.search_species(species)
+    elsif params[:breed].present?
+      breed = params[:breed]
+      @adoptable_animals = AdoptableAnimal.search_breed(breed)
+    elsif params[:name].present?
+      name = params[:name]
+      @adoptable_animals = AdoptableAnimal.search_name(name)
+    elsif params[:age].present?
+      age = params[:age]
+      @adoptable_animals = AdoptableAnimal.search_age(age)
+    elsif params[:sex].present?
+      sex = params[:sex]
+      @adoptable_animals = AdoptableAnimal.search_sex(sex)
     else
       @adoptable_animals = AdoptableAnimal.all
     end
