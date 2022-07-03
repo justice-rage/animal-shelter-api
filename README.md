@@ -34,7 +34,7 @@ This API allows users to return animals stored in an animal shelter database. AP
 - Activate rails server: `rails s` 
 - Navigate to localhost:3000 in your default browser to view API.
 - Alternatively, download Postman(API platform) to test the example endpoints below.
-- To generate new random database entires input the following command: `rake db:reset` -- NOTE: Turn of rails server prior to reset, and turn back on after reset is complete.
+- To generate new random database entries input the following command: `rake db:reset` -- NOTE: Turn of rails server prior to reset, and turn back on after reset is complete.
 
 # Endpoints
 | Usage | Method | URL | Parameters |
