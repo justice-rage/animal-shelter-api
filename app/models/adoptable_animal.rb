@@ -1,4 +1,4 @@
-class AdoptableAnimal < 
+class AdoptableAnimal < ApplicationRecord
     validates :species, presence: true
     validates :breed, presence: true
     validates :name, presence: true
