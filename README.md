@@ -42,11 +42,11 @@ This API allows users to return animals stored in an animal shelter database. AP
 | See All Animals | GET | `localhost:3000/v1/adoptable_animals` |  |
 | Adoptable animal pages(25 at a time) | GET | `localhost:3000/v1/adoptable_animals?page=[integer]` | :page |
 | Find specific animal by ID | GET | `localhost:3000/v1/adoptable_animals/[:id]` |:id |
-| Find adoptable animals by species | GET | `localhost:3000/v1/adoptable_animals?species=(insert full or partial name)` | :species |
-| Find adoptable animals by breed | GET | `localhost:3000/v1/adoptable_animals?breed=(insert full or partial name)` | :breed |
+| Find adoptable animals by species | GET | `localhost:3000/v1/adoptable_animals?species=(insert full or partial species)` | :species |
+| Find adoptable animals by breed | GET | `localhost:3000/v1/adoptable_animals?breed=(insert full or partial breed)` | :breed |
 | Find adoptable animals by name | GET | `localhost:3000/v1/adoptable_animals?name=(insert full or partial name)` | :name |
-| Find adoptable animals by age | GET | `localhost:3000/v1/adoptable_animals?age=(insert full or partial name)` | :age |
-| Find adoptable animals by sex | GET | `localhost:3000/v1/adoptable_animals?sex=(insert full or partial breed)` | :sex |
+| Find adoptable animals by age | GET | `localhost:3000/v1/adoptable_animals?age=(insert full or partial age)` | :age |
+| Find adoptable animals by sex | GET | `localhost:3000/v1/adoptable_animals?sex=(insert full or partial sex)` | :sex |
 | Find random adoptable animal | GET | `localhost:3000/v1/adoptable_animals?random=true` | :random |
 | Create adoptable animal entry | POST | `localhost:3000/v1/adoptable_animals?name=[string]&age=[integer]&breed=[string]` | :species, :breed, :name, :age, :sex |
 | Update adoptable animal entry | PUT | `localhost:3000/v1/adoptable_animals/[:id]?name=[string]&age=[integer]&breed=[string]` | :species, :breed, :name, :age, :sex |
