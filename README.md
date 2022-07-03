@@ -1,8 +1,8 @@
 # Animal Shelter API 🐱🐶
 #### Created by _Justice Douglas_
-An Epicodus Bootcamp Independent Project:
-Framework: Ruby on Rails
-Task: Build an API.
+#### An Epicodus Bootcamp Independent Project
+##### Framework: Ruby on Rails
+##### Task: Build an API.
 
 This API allows users to return animals stored in an Animal Shelter database. API users are able to get, post, put or delete adoptable animals within the database. Additionally, utilizing custom scope searching, users can return adoptable anaimsl based on species, breed, name, age, sex and even return a completely random animal utilizing the parameters shown below. Versioning and pagination (25 per page) are also utilized in the off chance this API grows.
 
