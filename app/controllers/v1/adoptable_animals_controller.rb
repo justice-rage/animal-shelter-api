@@ -3,6 +3,14 @@ class V1::AdoptableAnimalsController < ApplicationController
   def index
     if params[:page].present?
       @adoptable_animals = AdoptableAnimal.paginate(:page => params[:page], per_page:25)
+    # Random Endpoint - Bug Note:
+    #   Entering /v1/adoptable_animals?random returns same results as /v1/adoptable_animals
+    #   When .sample is appended to line 12 statement an undefined method error is returned
+    #   .sample appended to else statement works as expected, but not on elsif
+    #   Potential Bug Explanation:
+    #     elsif is being skipped over, but unsure why.
+    # elsif params[:random].present?
+    #   @adoptable_animals = AdoptableAnimal.all.sample
     else
       @adoptable_animals = AdoptableAnimal.all
     end
