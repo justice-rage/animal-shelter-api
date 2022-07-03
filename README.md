@@ -44,7 +44,7 @@ This API allows users to return animals stored in an animal shelter database. AP
 | Find specific animal by ID | GET | `localhost:3000/v1/adoptable_animals/[:id]` |:id |
 | Find adoptable animals by species | GET | `localhost:3000/v1/adoptable_animals?species=(insert full or partial name)` | :species |
 | Find adoptable animals by breed | GET | `localhost:3000/v1/adoptable_animals?breed=(insert full or partial name)` | :breed |
-| Find adoptable animals by name | GET | `localhost:3000/v1/adoptable_animals?nname=(insert full or partial name)` | :name |
+| Find adoptable animals by name | GET | `localhost:3000/v1/adoptable_animals?name=(insert full or partial name)` | :name |
 | Find adoptable animals by age | GET | `localhost:3000/v1/adoptable_animals?age=(insert full or partial name)` | :age |
 | Find adoptable animals by sex | GET | `localhost:3000/v1/adoptable_animals?sex=(insert full or partial breed)` | :sex |
 | Find random adoptable animal | GET | `localhost:3000/v1/adoptable_animals?random=true` | :random |
