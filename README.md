@@ -39,7 +39,7 @@ This API allows users to return animals stored in an animal shelter database. AP
 # Endpoints
 | Usage | Method | URL | Parameters |
 | :---: | :---: | :---: | :---: |
-| See All Animals | GET | `localhost:3000/v1/animals` |  |
+| See All Animals | GET | `localhost:3000/v1/adoptable_animals` |  |
 | Adoptable animal pages(25 at a time) | GET | `localhost:3000/v1/adoptable_animals?page=[integer]` | :page |
 | Find specific animal by ID | GET | `localhost:3000/v1/adoptable_animals/[:id]` |:id |
 | Find adoptable animals by species | GET | `localhost:3000/v1/adoptable_animals?species=(insert full or partial name)` | :species |
