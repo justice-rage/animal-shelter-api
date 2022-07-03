@@ -1,4 +1,9 @@
-class AdoptableAnimal < ApplicationRecord
+class AdoptableAnimal < 
+    validates :species, presence: true
+    validates :breed, presence: true
+    validates :name, presence: true
+    validates :age, presence: true
+    validates :sex, presence: true
 
     scope :search_species, -> (species_parameter) { where("species ilike ?", "%#{species_parameter}%")}
     scope :search_breed, -> (breed_parameter) { where("breed ilike ?", "%#{breed_parameter}%")}
