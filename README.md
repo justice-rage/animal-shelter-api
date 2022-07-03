@@ -6,6 +6,13 @@
 
 This API allows users to return animals stored in an animal shelter database. API users are able to get, post, put or delete adoptable animals within the database. Additionally, utilizing custom scope searching, users can return adoptable anaimsl based on species, breed, name, age, sex and even return a completely random animal utilizing the parameters shown below. Versioning and pagination (25 per page) are also utilized in the off chance this API grows.
 
+## Animal Shelter API Information:
+- Species: cat, dog
+- Breeds: Randomly generated from Faker gem.
+- Names: Randomly generated from faker gem.
+- Age: baby, adolescent, adult, senior
+- Sex: female, male
+
 # Technology Stack
 - Ruby
 - Ruby on Rails
