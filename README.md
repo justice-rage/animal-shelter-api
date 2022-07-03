@@ -62,6 +62,9 @@ This API allows users to return animals stored in an animal shelter database. AP
 ## Bugs
 - None currently known.
 
+## Tests
+- Spec/v1/models/adoptable_animal_spec.rb tests not passing. Suspect shoulda-matcher issue. Will continue troubleshooting.
+
 ## License
 
 MIT Copyright 2022 (c) Justice Douglas
