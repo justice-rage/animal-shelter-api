@@ -60,7 +60,7 @@ This API allows users to return animals stored in an animal shelter database. AP
 | Delete adoptable animal entry | DELETE | `localhost:3000/v1/adoptable_animals/[:id]` | :id |
 
 ## Bugs
-- None currently known.
+- Searching for 'male' animals returns all animals because the string 'male' is included in 'female'.
 
 ## Tests
 - Spec/v1/models/adoptable_animal_spec.rb tests not passing. Suspect shoulda-matcher issue. Will continue troubleshooting.
